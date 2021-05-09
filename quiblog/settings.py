@@ -25,7 +25,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'w^ul)d*_thq&zv2d6-r$r=qp+45g+ssu%olq$-vuq_4_(5o5b1'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = (os.environ.get('DEBUG_VALUE') == 'True')
 
 ALLOWED_HOSTS = ['quiblogapp.herokuapp.com']
 
