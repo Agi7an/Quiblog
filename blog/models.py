@@ -29,10 +29,10 @@ class Question(models.Model):
 
     @property
     def photo_url(self):
-    if self.photo and hasattr(self.photo, 'url'):
-        return self.photo.url
-    else:
-        return '#'
+        if self.photo and hasattr(self.photo, 'url'):
+            return self.photo.url
+        else:
+            return '#'
 
     @property
     def image_url(self):
