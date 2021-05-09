@@ -148,8 +148,6 @@ EMAIL_HOST_PASSWORD = 'qaz  098'
 #AWS_S3_FILE_OVERWRITE = False
 #AWS_DEFAULT_ACL = None
 #DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
-export SECRET_KEY = '98c46eb3863e926457e73aa369e1d141eeef3677a92a3a77'
-export DEBUG_VALUE = "True"
 
 #DEFAULT_FILE_STORAGE = 'storages.backends.dropbox.DropBoxStorage'
 #ROPBOX_OAUTH2_TOKEN = 'sl.Awd8IJJSwaDIg2AmSH2PSR1l8nj-_KQ-Q2J1lxccjLLos5xd3_EIou1i-9oFzcxxBe_Zk74NJGWCMriLEk7GsXzQGOWY7vjmxQ3J7mTq6St9AubMSkq-FcRl3Oo6W6KC-f6s_HI'
