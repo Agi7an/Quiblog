@@ -21,7 +21,7 @@ class Question(models.Model):
 
     def save(self, *args, **kwargs):
         super().save(*args, **kwargs)
-        if self.image:
+        if self.question_image:
             img = Image.open(self.question_image.path)
             if img.height > 500 or img.width > 700:
                 output_size = (500, 700)
@@ -30,8 +30,8 @@ class Question(models.Model):
 
     @property
     def image_url(self):
-        if self.image:
-            return self.image.url
+        if self.question_image:
+            return self.question_image.url
         else:
             return '#'
 
