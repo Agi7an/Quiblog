@@ -21,18 +21,12 @@ class Question(models.Model):
 
     def save(self, *args, **kwargs):
         super().save(*args, **kwargs)
-        img = Image.open(self.question_image.path)
-        if img.height > 500 or img.width > 700:
-            output_size = (500, 700)
-            img.thumbnail(output_size)
-            img.save(self.question_image.path)
-
-    @property
-    def photo_url(self):
-        if self.photo and hasattr(self.photo, 'url'):
-            return self.photo.url
-        else:
-            return '#'
+        if self.image:
+            img = Image.open(self.question_image.path)
+            if img.height > 500 or img.width > 700:
+                output_size = (500, 700)
+                img.thumbnail(output_size)
+                img.save(self.question_image.path)
 
     @property
     def image_url(self):
