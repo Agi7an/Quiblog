@@ -4,7 +4,7 @@
 
     {% for post in posts %}
         <article class="media content-section">
-            <img class = "rounded-circle article-img" src = "{{ post.author.profile.image.url }}">
+            <img class = "rounded-circle article-img" src = "{{ post.author.profile.image.url|default_if_none:'#' }}">
             <div class="media-body">
                 <div class="article-metadata">
                     <a class="mr-2" href="{% url 'user-questions' post.author.username %}">{{ post.author }}</a>
@@ -17,7 +17,7 @@
                     {% endfor %}
                 </ul>
                 {% if post.question_image %}
-                    <img class="article-img" src = "{{ post.question_image.url }}">
+                    <img class="article-img" src = "{{ post.question_image.url|default_if_none:'#' }}">
                 {% endif %}
                 <p class="article-content">{{ post.category }}</p>
             </div>
