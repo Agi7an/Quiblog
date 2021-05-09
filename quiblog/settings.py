@@ -150,6 +150,6 @@ EMAIL_HOST_PASSWORD = 'qaz  098'
 
 DEFAULT_FILE_STORAGE = 'storages.backends.dropbox.DropBoxStorage'
 DROPBOX_OAUTH2_TOKEN = 'TSPUyyfNYbIAAAAAAAAAAcKrUl9RXj1tWlcFoZ4CLii_6mmIS9aUd2fkFZnkEpJz'
-DROPBOX_ROOT_PATH = '/media/'
+#DROPBOX_ROOT_PATH = '/media/'
 
 django_heroku.settings(locals())
