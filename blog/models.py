@@ -28,6 +28,13 @@ class Question(models.Model):
             img.save(self.question_image.path)
 
     @property
+    def photo_url(self):
+    if self.photo and hasattr(self.photo, 'url'):
+        return self.photo.url
+    else:
+        return '#'
+
+    @property
     def image_url(self):
         if self.image:
             return self.image.url
