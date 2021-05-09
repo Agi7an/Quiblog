@@ -25,7 +25,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'w^ul)d*_thq&zv2d6-r$r=qp+45g+ssu%olq$-vuq_4_(5o5b1'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['quiblogapp.herokuapp.com']
 
@@ -42,7 +42,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'storages'
+    #'storages'
 ]
 
 MIDDLEWARE = [
@@ -148,8 +148,13 @@ EMAIL_HOST_PASSWORD = 'qaz  098'
 #AWS_DEFAULT_ACL = None
 #DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
 
-DEFAULT_FILE_STORAGE = 'storages.backends.dropbox.DropBoxStorage'
-DROPBOX_OAUTH2_TOKEN = 'TSPUyyfNYbIAAAAAAAAAAcKrUl9RXj1tWlcFoZ4CLii_6mmIS9aUd2fkFZnkEpJz'
+#DEFAULT_FILE_STORAGE = 'storages.backends.dropbox.DropBoxStorage'
+#DROPBOX_OAUTH2_TOKEN = 'TSPUyyfNYbIAAAAAAAAAAcKrUl9RXj1tWlcFoZ4CLii_6mmIS9aUd2fkFZnkEpJz'
 #DROPBOX_ROOT_PATH = '/media/'
+
+#DEFAULT_FILE_STORAGE = 'storages.backends.dropbox.DropBoxStorage'
+#DROPBOX_TIMEOUT = 1000
+
+#DROPBOX_OAUTH2_TOKEN = os.environ.get("AUTH_TOKEN", 'TSPUyyfNYbIAAAAAAAAAAcKrUl9RXj1tWlcFoZ4CLii_6mmIS9aUd2fkFZnkEpJz')
 
 django_heroku.settings(locals())
