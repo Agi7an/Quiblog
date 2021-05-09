@@ -149,7 +149,7 @@ EMAIL_HOST_PASSWORD = 'qaz  098'
 #DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
 
 DEFAULT_FILE_STORAGE = 'storages.backends.dropbox.DropBoxStorage'
-DROPBOX_OAUTH2_TOKEN = 'sl.Awd8IJJSwaDIg2AmSH2PSR1l8nj-_KQ-Q2J1lxccjLLos5xd3_EIou1i-9oFzcxxBe_Zk74NJGWCMriLEk7GsXzQGOWY7vjmxQ3J7mTq6St9AubMSkq-FcRl3Oo6W6KC-f6s_HI'
+DROPBOX_OAUTH2_TOKEN = 'EuUIrOAyFxwAAAAAAAAAAZZHzcaOddTXcw3cKOhW-RfXRVv1qieIPbIER_QUt6Sj'
 DROPBOX_ROOT_PATH = '/media/'
 
 django_heroku.settings(locals())
