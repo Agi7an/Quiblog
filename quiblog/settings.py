@@ -22,7 +22,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'w^ul)d*_thq&zv2d6-r$r=qp+45g+ssu%olq$-vuq_4_(5o5b1'
+#SECRET_KEY = ''        REMOVED FOR SECURITY REASONS
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -138,15 +138,8 @@ EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
-EMAIL_HOST_USER = 'quiblogweb@gmail.com'
-EMAIL_HOST_PASSWORD = 'qaz  098'
-
-#AWS_ACCESS_KEY_ID = 'AKIAVERQSVNZBJT67B5S'
-#AWS_SECRET_ACCESS_KEY = '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'
-#AWS_STORAGE_BUCKET_NAME = 'agilan-quiblog-files2'
-#AWS_S3_FILE_OVERWRITE = False
-#AWS_DEFAULT_ACL = None
-#DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
+EMAIL_HOST_USER = ''        #REMOVED FOR SECURITY REASONS
+EMAIL_HOST_PASSWORD = ''    #REMOVED FOR SECURITY REASONS
 
 #DEFAULT_FILE_STORAGE = 'storages.backends.dropbox.DropBoxStorage'
 #DROPBOX_OAUTH2_TOKEN = 'TSPUyyfNYbIAAAAAAAAAAcKrUl9RXj1tWlcFoZ4CLii_6mmIS9aUd2fkFZnkEpJz'
