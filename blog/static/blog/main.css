@@ -1,6 +1,6 @@
 body {
     background: #eeeeee;
-    color: #333333;
+    color: #7749b4;
     margin-top: 5rem;
   }
   
@@ -13,11 +13,11 @@ body {
   }
   
   .bg-steel {
-    background-color: #517fa0;
+    background-color: #7749b4;
   }
   
   .site-header .navbar-nav .nav-link {
-    color: #00a2ff;
+    color: #ffffff;
   }
   
   .site-header .navbar-nav .nav-link:hover {
@@ -57,8 +57,8 @@ body {
   }
 
   .profile-img {
-    height: 125px;
-    width: 125px;
+    height: 60px;
+    width: 60px;
     margin-right: 16px;
   }
   
@@ -84,6 +84,8 @@ body {
     width: 125px;
     margin-right: 20px;
     margin-bottom: 16px;
+    padding-bottom: 2px;
+    padding-top: 2px;
   }
   
   .account-heading {
