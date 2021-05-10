@@ -13,11 +13,11 @@ body {
   }
   
   .bg-steel {
-    background-color: #5f788a;
+    background-color: #517fa0;
   }
   
   .site-header .navbar-nav .nav-link {
-    color: #cbd5db;
+    color: #00a2ff;
   }
   
   .site-header .navbar-nav .nav-link:hover {
@@ -57,8 +57,8 @@ body {
   }
 
   .profile-img {
-    height: 25px;
-    width: 25px;
+    height: 125px;
+    width: 125px;
     margin-right: 16px;
   }
   
